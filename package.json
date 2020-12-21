@@ -1,15 +1,20 @@
 {
-	"name": "anagram-finder",
+	"name": "@nazrhyn/anagram-finder",
 	"version": "0.1.0",
 	"description": "Finds anagram groups in a list of words.",
 	"author": "Chris Harwood <nazrhyn@gmail.com>",
 	"license": "MIT",
-	"private": true,
-	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nazrhyn/anagram-finder.git"
+	},
+	"homepage": "https://github.com/nazrhyn/anagram-finder",
+	"bugs": "https://github.com/nazrhyn/anagram-finder/issues",
 	"engines": {
-		"node": ">=14",
+		"node": ">=14.15",
 		"npm": ">=6"
 	},
+	"main": "src/finder.js",
 	"bin": "./bin/cli.js",
 	"scripts": {
 		"test": "jest",

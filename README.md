@@ -2,22 +2,24 @@
 This package implements an anagram finder which locates groups of anagrams in a word list.
 
 ## Installation
-**anagram-finder** can be installed as a package dependency or globally and can be run on the command line.
+**anagram-finder** can be installed as a package dependency and can be run on the command line.
 
-```
-npm install [--global] anagram-finder-#.#.#.tgz 
+```shell
+npm install @nazrhyn/anagram-finder
 ```
 
 ### Prerequisites
 * **Operating System** - This code should work on any operating system supported by Node.js.
 * **Node.js 14+** - ECMAScript 11 (2020) features are used.
-* **Package TGZ** - This package is not published to NPM, so download the TGZ from the releases page.
+* **GitHub Packages Setup** - This package is published to GitHub Packages under the `@nazrhyn` scope. See [Installing a Package](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-npm-for-use-with-github-packages#installing-a-package) for instructions.
+
+Since the package is published to GitHub Packages, global installation will either need a `@nazrhyn`-scoped registry line in `~/.npmrc` (`@nazrhyn:registry = https://npm.pkg.github.com`) or as a parameter to `npm install` (`--@nazrhyn:registry=https://npm.pkg.github.com`). This will allow all other packages to be resolved by the normal NPM registry.
 
 ### Usage
 Require the package to use it as a library.
 
 ```js
-const finder = require('anagram-finder');
+const finder = require('@nazrhyn/anagram-finder');
 
 let words;
 
