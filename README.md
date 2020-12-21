@@ -1,4 +1,6 @@
-## Introduction
+# anagram-finder
+[![Coverage Status](https://coveralls.io/repos/github/nazrhyn/anagram-finder/badge.svg?branch=master)](https://coveralls.io/github/nazrhyn/anagram-finder?branch=master)
+
 This package implements an anagram finder which locates groups of anagrams in a word list.
 
 ## Installation
