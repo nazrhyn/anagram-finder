@@ -1,0 +1,33 @@
+{
+	"name": "anagram-finder",
+	"version": "0.1.0",
+	"description": "Finds anagram groups in a list of words.",
+	"author": "Chris Harwood <nazrhyn@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"main": "index.js",
+	"engines": {
+		"node": ">=14",
+		"npm": ">=6"
+	},
+	"bin": "./bin/cli.js",
+	"scripts": {
+		"test": "jest",
+		"test:clean": "rm -rf coverage/"
+	},
+	"dependencies": {
+		"minimist": "1.2.x"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"@babel/eslint-parser": "^7.12.1",
+		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+		"@babel/plugin-proposal-optional-chaining": "^7.12.7",
+		"eslint": "7.16.x",
+		"eslint-plugin-jest": "24.x",
+		"eslint-plugin-node": "11.x",
+		"jest": "26.x",
+		"jest-runner-eslint": "0.10.x",
+		"typescript": "4.1.x"
+	}
+}
