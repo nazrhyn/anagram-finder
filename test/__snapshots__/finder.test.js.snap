@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`finder() returns a properly-sorted and filtered list of anagram groups 1`] = `
+Array [
+  Array [
+    "abcd",
+    "bcda",
+    "cdab",
+    "dabc",
+  ],
+  Array [
+    "efg",
+    "fge",
+    "gfe",
+  ],
+  Array [
+    "hi",
+    "ih",
+  ],
+]
+`;

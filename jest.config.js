@@ -17,6 +17,7 @@ module.exports = {
 			runner: 'jest-runner-eslint',
 			testMatch: [
 				'<rootDir>/src/**/*.js',
+				'<rootDir>/bin/**/*.js',
 				'<rootDir>/test/**/*.test.js',
 			],
 		},

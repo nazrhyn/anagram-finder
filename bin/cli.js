@@ -9,7 +9,7 @@ const os = require('os');
 _run()
 	.catch(function (err) {
 		console.error(err.message);
-		process.exitCode = 1;
+		process.exitCode = 2;
 	});
 
 /**
@@ -74,11 +74,16 @@ async function _run() {
 	}
 
 	if (!argv._.length) {
+		// If there are no non-option arguments, we try to read from stdin.
 		words = await _loadWordsFromStdin();
 	} else if (argv._.length === 1) {
+		// If there's one non-option argument, that's the file path.
 		words = await fs.readFile(argv._[0], 'utf8');
 	} else {
+		// Anything else is an error.
 		_printUsage();
+		process.exitCode = 1;
+		return;
 	}
 
 	if (stats) {

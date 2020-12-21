@@ -10,10 +10,14 @@ module.exports = function (words) {
 		throw new Error('Word list must be an array.');
 	}
 
+	if (!words.length) {
+		return [];
+	}
+
 	const groups = new Map();
 
 	for (const word of words) {
-		if (!word) {
+		if (!word || typeof word !== 'string') {
 			continue;
 		}
 
