@@ -1,6 +1,6 @@
 {
 	"name": "@nazrhyn/anagram-finder",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Finds anagram groups in a list of words.",
 	"author": "Chris Harwood <nazrhyn@gmail.com>",
 	"license": "MIT",
