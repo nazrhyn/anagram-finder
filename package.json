@@ -31,8 +31,8 @@
 		"eslint": "7.16.x",
 		"eslint-plugin-jest": "24.x",
 		"eslint-plugin-node": "11.x",
-		"jest": "26.x",
-		"jest-runner-eslint": "0.10.x",
-		"typescript": "4.1.x"
+		"jest": "27.x",
+		"jest-runner-eslint": "0.11.x",
+		"typescript": "4.4.x"
 	}
 }
